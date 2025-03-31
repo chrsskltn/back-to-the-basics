@@ -1,0 +1,16 @@
+body{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-bottom: 0;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80vw;          /* 80% of the viewport width */
+    margin: 0 auto; 
+    min-height: calc(100vh - 100px); /* subtracts top (40px) + bottom (40px) padding */
+}
+
+hr,
+section {
+  width: 90%; /* or any percent value you like */
+}
