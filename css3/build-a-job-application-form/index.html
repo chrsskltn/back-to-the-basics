@@ -4,30 +4,39 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Job Application Form</title>
+    <link rel="stylesheet" href="styles.css">
+    
 </head>
+
+
 <body>
     <div class="container">
         <form>
             <input type="text" id="name" placeholder="Please enter your full name">
             <input type="email" id="email" placeholder="Please enter your email">
-            <select id="position">
-                <fieldset class="radio-group">
-                        <legend>Availability</legend>
-                            <label>
-                                <input type="radio" name="Availability" value="full-time">
-                                Full time
-                            </label>
-                            <label>
-                                <input type="radio" name="Availability" value="part-time">
-                                Part time
-                            </label>
-                            <label>
-                                <input type="radio" name="Availability" value="casual">
 
-                                Casual
-                            </label>
-                </fieldset>
+
+            <select id="position">
+                      <option value="">Select a position</option>
+                      <option value="developer">Developer</option>
+                      <option value="designer">Designer</option>
+                      <option value="product-manager">Product Manager</option>
             </select>
+
+            <fieldset class="radio-group">
+                <legend>availability</legend>
+                <label>
+                    <input type="radio" name="availability" value="full-time">
+                    Full Time
+                </label>
+              
+                <label>
+                    <input type="radio" name="availability" value="part-time">
+                    Part Time
+                </label>
+            </fieldset>
+            <textarea id="message" placeholder="Enter your message here"></textarea>
+            <button type="submit">Submit</button>
         </form>
     </div>
 
